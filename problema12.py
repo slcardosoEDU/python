@@ -3,15 +3,8 @@ factores primos. """
 
 
 #Leemos el número a descomponer.
-esEntero = False
-numero = -1
-while not  esEntero:
-    numero = input("Introduzca número: ")
-    try:
-        numero = int(numero)
-        esEntero = True
-    except ValueError:
-        print("Eso no es un número.")
+from mi_libreria import leer_entero
+numero = leer_entero("Introduzca número: ")
 
 #Descomponemos en factores primos
 i = 2

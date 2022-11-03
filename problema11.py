@@ -1,13 +1,6 @@
 #Decir si un numero es primo o no
-esEntero = False
-numero = -1
-while not  esEntero:
-    numero = input("Introduzca número: ")
-    try:
-        numero = int(numero)
-        esEntero = True
-    except ValueError:
-        print("Eso no es un número.")
+from mi_libreria import leer_entero
+numero = leer_entero("Introduzca número: ")
 
 aux = 2
 while aux < numero:
