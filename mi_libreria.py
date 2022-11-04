@@ -22,3 +22,18 @@ def factorial(n):
        contador += 1
     
     return factorial
+
+def mcd(a,b):
+    """Calcula el M.C.D de a y b
+    *a: int
+    *b: int
+    """
+    n = a
+    if a > b:
+        n = b
+    
+    while a % n !=0 or b % n != 0:
+        print(f"Probando n={n}")
+        n = n-1
+
+    return n
