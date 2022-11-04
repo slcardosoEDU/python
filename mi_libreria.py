@@ -29,8 +29,7 @@ def mcd(a,b):
     *b: int
     """
     n = a
-    if a > b:
-        n = b
+    
     
     while a % n !=0 or b % n != 0:
         print(f"Probando n={n}")
