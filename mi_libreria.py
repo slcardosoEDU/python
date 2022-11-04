@@ -10,3 +10,15 @@ def leer_entero(prompt):
         except ValueError:
             print("Eso no es un número.")
     return numero
+
+def factorial(n):
+    """Calcula el factorial de n
+    *n: int
+    """
+    contador = 1
+    factorial = 1
+    while contador <= n:
+       factorial = factorial * contador
+       contador += 1
+    
+    return factorial
