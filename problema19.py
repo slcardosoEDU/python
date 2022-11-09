@@ -1,4 +1,4 @@
 """
 """
 from mi_libreria import *
-print(mcd(24000,187))
+print(mcd(2400000000,187))
